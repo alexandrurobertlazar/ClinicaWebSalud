@@ -1,0 +1,351 @@
+*{
+    font:arial,sans-serif;
+    font-size:2rem;
+}
+#logo{
+    width:100px;
+    float:left;
+}
+
+.usuariologeado{
+    font-weight:bold;
+    font-size:100%;
+    float:right;
+    margin-top: 25px;
+}
+
+.clearfix{
+    clear:both;
+}
+
+.borderBox{
+    border:5px;
+}
+
+.error{
+    color:red;
+    font-weight:bold;
+}
+
+
+html{
+	font-size:62.5%; /*Esto sirve para un mejor control de la unidad rem. Con esto: 1rem = 10px relativos a la pantalla del usuario.*/
+		
+}
+
+body {
+	font-size: 1.6rem; /* 1.6rem = 16 pixeles (relativo) */
+	margin: 0; /*Quitamos los márgenes para que nuestros contenedores principales puedan cubrir toda la pantalla.*/
+	font-family: sans-serif;
+	
+	/* color: #707070; */
+	/*Color de fondo con gradiente*/
+	/*background: rgb(0,176,158);*/
+	
+	background: linear-gradient(90deg, rgba(0,176,158,1) 0%, rgba(0,210,139,1) 35%, rgba(80,236,96,1) 100%);
+	
+	/*Color de fuente blanco*/
+	color: #F4FBF3;
+
+}
+
+.contenedor-head {
+	padding:0 0 10vh 0; /*Compensamos la altura del nav haciendo el contenedor mas largo por abajo. Esto sirve para que los items queden mejor centrados.*/
+	max-width: 100%;
+	margin: 0;
+	height: 100vh; /* Mide toda la pantalla del usuario. */
+	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	
+	font-size: 3rem;
+}
+
+.contenedor-datos1 {
+	padding:0 0 12vh 0;
+	max-width: 100%;
+	margin: 0;
+	
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	font-size: 3rem;
+}
+
+.contenedor-tabla {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+	/*
+	Color de fuente negro -> tiene mas especificidad que el color de fuente del fondo
+	*/
+	color: black;
+}
+
+.dato1 {
+	margin: 0 1vw;
+	flex-basis: 30%
+}
+
+/* Para centrar y ajustar textos. */
+.centro{
+	text-align:center;
+}
+
+.izquierda {
+    text-align: left;
+    
+}
+
+.negrita{
+    font-weight: bold;
+}
+
+.ajustado {
+    
+    padding: 1em;
+    
+}
+
+
+
+/* Fondos para los contenedores*/
+.fondo-gradiente-verde {
+	
+	/*Color de fondo con gradiente*/
+	/*background: rgb(0,176,158);*/
+	background: linear-gradient(90deg, rgba(0,176,158,1) 0%, rgba(0,210,139,1) 35%, rgba(80,236,96,1) 100%);
+	
+	/*Color de fuente blanco*/
+	color: #F4FBF3;
+}
+
+.fondo-gris-claro {
+	
+	background: #e0e0e0;
+	padding: 2em;
+	
+	/* Color de fuente gris muy oscuro */
+	color:#3d3d3d;
+}
+
+.fondo-azul-oscuro {
+	
+	background: #2F4858;
+	padding: 2em;
+	
+	/* Color de fuente blanco */
+	color:#F4FBF3;
+	
+}
+
+/* Variables */
+
+h1 {
+	font-weight: bolder;
+	font-size: 6rem
+}
+
+h2{
+	font-weight: bolder;
+	font-size: 4rem
+}
+
+.color-gris-oscuro {
+    
+    color: #3E4A3D;
+}
+
+/* Diseño del nav */
+nav {
+	margin: 0;
+}
+
+nav a{
+	color: black;
+	text-decoration: none;
+}
+
+/*
+Imagen a la derecha, todo lo demás a la izq
+
+La idea es hace un contenedor que mande a sus items a ambas esquinas
+
+Solo hay 2 de esos items: La imágen y los botones.
+*/
+.nav-main {
+    min-height: 10vh;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+/*Objetos del nav */
+.nav-item {
+    font-size: 2.2rem;
+    padding: 1em;
+	color: #3E4A3D; /*gris: #707070; */
+}
+
+.nav-logo {
+	margin-right:auto;
+	padding: 0.25em 0 0 3em; /* Separado un poco más de la izquierda */
+}
+
+.nav-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+	padding: 0 3em 0 0; /* Separado un poco más de la derecha.*/
+}
+
+nav a:hover{
+	color: #000000;
+}
+
+/**
+ * Tablas
+**/
+
+table {
+	flex-basis: 50%;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 0 0 1em rgba(0, 0, 0, 0.1);
+}
+
+td {
+	padding: 1em;
+	/*Transparente blanco*/
+	background-color: rgba(255, 255, 255, 0.2); 
+}
+
+th {
+	text-align: center;
+	padding: 1em;
+	background: #00C96E ;
+}
+
+tr:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+/**
+ * Login
+**/
+.login-container {
+    min-height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(90deg, rgba(0,176,158,1) 0%, rgba(0,210,139,1) 35%, rgba(80,236,96,1) 100%);
+    background-size: cover;
+    background-position: center;
+    perspective: 1000px;
+}
+
+.login-container form {
+    height: 450px;
+    width: 350px;
+    background: rgba(255, 255, 255, .1);
+    text-align: center;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .3);
+    border-top: 1px solid rgba(255, 255, 255, .3);
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    backdrop-filter: blur(10px);
+    transform-style: preserve-3d;
+}
+
+.login-container form h3 {
+    font-size: 30px;
+    padding: 30px 0;
+    color: white;
+    letter-spacing: 3px;
+}
+
+.login-container form input {
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 82%;
+    background: rgba(0, 0, 0, .1);
+    color: white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5) inset;
+    font-size: 17px;
+    padding: 0 10px;
+    margin: 15px 0;
+    letter-spacing: 1px;
+    border-radius: 15px;
+}
+
+.login-container form input::placeholder {
+    color: lemonchiffon;
+}
+
+.login-container form input[type="submit"] {
+    width: 90%;
+    cursor: pointer;
+    background:linear-gradient(90deg, rgba(0,176,158,1) 0%, rgba(0,210,139,1) 35%, rgba(80,236,96,1) 100%);
+    margin-top: 30px;
+    border-radius: 50px;
+}
+
+.login-container form input[type="submit"]:hover {
+    letter-spacing: 4px;
+}
+
+
+
+
+/**
+Formulario Busqueda
+**/
+/* #filter-form */ input{
+    outline: none;
+    border: none;
+    height: 40px;
+    background: white;
+    color: black;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .5) inset;
+    font-size: 1.7rem;
+    padding: 0 5px;
+    margin: 15px 0;
+    letter-spacing: 1px;
+    border-radius: 15px;
+}
+
+/* #filter-form */ input[type="submit"] {
+    cursor: pointer;
+    color: white;
+    background:linear-gradient(90deg, rgba(0,176,158,1) 0%, rgba(0,210,139,1) 35%, rgba(80,236,96,1) 100%);
+    margin-top: 30px;
+    border-radius: 50px;
+}
+
+
+
+/* #filter-form */ input::placeholder {
+    color: black;
+}
+
+
+
+
+
+
+
+
